@@ -1,0 +1,115 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main > section {
+    width: 80%;
+    max-width: 1000px;
+}
+
+main > section > article {
+    width: 100%;
+    margin-bottom: 70px;
+    padding: 0 50px;
+}
+
+/* General article header */
+main > section > article > h1 {
+    width: 100%;
+    font-size: 2em;
+    color: #555;
+}
+
+main > section > article > figure {
+    position: sticky;
+    top: -160px;
+    margin: 0;
+    height: 300px;
+
+    overflow: hidden;
+}
+
+main > section > article > figure > img {
+    height: 100%;
+}
+
+main > section > article > figure > figcaption {
+    width: 100%;
+    font-size: 1em;
+}
+
+main > section > article > figure > h2 {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 0 0 20px black;
+}
+
+main > section > article > p {
+    color: #333;
+    line-height: 1.7em;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+main > aside {
+    width: 10%;
+    position: -webkit-sticky;
+    position: sticky;
+    align-self: flex-start;
+    top: 50px;
+    right: 0;
+    padding: 20px;
+
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main > aside > h1 {
+    text-align: center;
+    width: 100%;
+    color: #555;
+}
+
+main > aside > figure {
+    text-align: center;
+    width: 100px;
+    margin: 0 0 50px 0;
+}
+
+/* Weather day */
+main > aside > figure > h4 {
+    margin: 5px auto;
+    color: #333;
+}
+
+/* Weather icon */
+main > aside > figure > img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Weather temperature */
+main > aside > figure > figcaption {
+    font-size: 2em;
+    color: #333;
+}

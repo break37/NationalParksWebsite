@@ -1,0 +1,131 @@
+
+header {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menu */
+header > nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 20px -10px black;
+    transition: 300ms, ease;
+}
+
+/* Allows to make blur navbar. Backdrop-filter was causing conflict,
+ when it was set both on parent and children element */
+header > nav > aside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+
+header nav ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+/* Menu element */
+header > nav ul > li {
+    padding: 20px 0;
+}
+
+header > nav > ul > li i{
+    font-family: 'Material Icons';
+    font-style: normal;
+}
+
+header nav a{
+    padding: 20px 10px;
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 0 0 2px black;
+    cursor: pointer;
+}
+
+header nav a:visited{
+    color: white;
+}
+
+/* Submenu */
+header > nav > ul > li > ul{
+    position: absolute;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    text-decoration: none;  
+    backdrop-filter: blur(20px);  
+    box-shadow: 0 15px 25px -10px black;
+    border-radius: 0 0 5px 5px;
+    transition: 500ms;
+}
+
+/* Submenu element */
+header > nav > ul > li > ul > li{
+    width: 100%;
+    padding: 20px;
+    transition: 300ms;
+}
+
+/* Submenu element hover */
+header > nav > ul > li > ul > li:hover{
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 0 15px -5px black;
+}
+
+/* Last submenu */
+header > nav > ul > li:last-child > ul{
+    right: 0;
+    left: auto;
+}
+
+/* Show submenu */
+header > nav > ul > li:hover > ul{
+    max-height: 300px;
+}
+
+
+
+/* Banner */
+header > section > figure {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 0;
+    height: 100vh;
+
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 60px;
+    color: white;
+}
+
+header > section > figure > h1 {
+    position: absolute;
+    top: auto;
+    margin: 0;
+    bottom: 50px;
+    left: 50px;
+
+    font-weight: 900;
+    color: white;
+}

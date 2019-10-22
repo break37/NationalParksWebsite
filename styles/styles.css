@@ -1,0 +1,25 @@
+::selection {
+    background-color: lightgray;
+    color: green;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
